@@ -16,7 +16,7 @@
             <div class="field">
                 <label class="label">First Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" type="text" placeholder="">
                 </div>
             </div>
             </div>
@@ -24,7 +24,7 @@
             <div class="column is-half">
                 <label class="label">Last Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" type="text" placeholder="">
                 </div>
             </div>
         </div>
@@ -33,19 +33,19 @@
             <div class="field">
                 <label class="label">Email Address</label>
                 <div class="control">
-                    <input class="input" type="email" placeholder="Email input">
+                    <input class="input" type="email" placeholder="">
                 </div>
             </div>
             <div class="field">
                 <label class="label">Personal Preferences</label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                    <textarea class="textarea" placeholder=""></textarea>
                 </div>
             </div>
             <div class="field">
                 <label class="label">Private notes about this person</label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                    <textarea class="textarea" placeholder=""></textarea>
                 </div>
             </div>
 

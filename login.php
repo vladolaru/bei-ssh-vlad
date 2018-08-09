@@ -28,13 +28,13 @@
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
-                    <input class="input" type="email" placeholder="Email input">
+                    <input class="input" type="email" placeholder="">
                 </div>
             </div>
             <div class="field">
                 <label class="label">Password</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" type="password" placeholder="">
                 </div>
             </div>
         </div>

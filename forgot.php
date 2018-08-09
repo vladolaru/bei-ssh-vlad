@@ -27,7 +27,7 @@
         <p class="subtitle">We will send you an email to the address below with the information needed for you yo change the password.</p>
         <div class="content">
             <p class="subtitle has-text-danger">Your email address</p>
-            <input class="input" type="email" placeholder="Email input">
+            <input class="input" type="email" placeholder="">
         </div>
         <div class="field is-grouped">
             <div class="control">
