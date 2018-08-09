@@ -61,9 +61,6 @@
                 <div class="control">
                     <button class="button is-link is-focused is-danger is-rounded">Register</button>
                 </div>
-                <div class="control">
-                    <button class="button is-text">Cancel</button>
-                </div>
             </div>
             <button class="button is-text"><a href="login.php">Log into your account</a></button>
         </div>
