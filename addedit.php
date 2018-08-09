@@ -54,7 +54,7 @@
                     <button class="button is-link is-focused is-danger is-rounded">Save person's details</button>
                 </div>
                 <div class="control">
-                    <button class="button is-text">Cancel</button>
+                    <button class="button is-text"><a href="list.php">Cancel</a></button>
                 </div>
             </div>
         </div>

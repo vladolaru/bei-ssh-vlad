@@ -65,7 +65,7 @@
                     <button class="button is-text">Cancel</button>
                 </div>
             </div>
-            <button class="button is-text">Log into your account</button>
+            <button class="button is-text"><a href="login.php">Log into your account</a></button>
         </div>
     </article>
 </section>

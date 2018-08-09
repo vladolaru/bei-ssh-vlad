@@ -38,7 +38,7 @@
         </div>
             <div class="control">
                 <button class="button is-link is-focused is-danger is-rounded">Set password</button>
-                <button class="button is-text is-pulled-right">Log into your account</button>
+                <button class="button is-text is-pulled-right"><<a href="login.php">Log into your account</a></button>
             </div>
         </div>
     </article>

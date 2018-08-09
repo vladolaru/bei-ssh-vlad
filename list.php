@@ -31,6 +31,18 @@
     </div>
 </section>
 <section class="container">
+    <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+            <p class="title">Your Secret Santa players</p>
+            <div class="content">
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-link is-focused is-danger is-rounded"><a href="addedit.php">Add a new one</a></button>
+                    </div>
+            </div>
+        </article>
+    </div>
+    </div>
 
 </section>
 <footer>

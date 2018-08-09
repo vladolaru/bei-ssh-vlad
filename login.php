@@ -40,9 +40,9 @@
         </div>
         <div class="control">
             <button class="button is-link is-focused is-danger is-rounded">Login</button>
-            <button class="button is-text is-pulled-right">Forgot your password?</button>
+            <button class="button is-text is-pulled-right"><a href="forgot.php">Forgot your password?</a></button>
         </div>
-        <button class="button is-text">Register a new account</button>
+        <button class="button is-text"><a href="register.php">Register a new account</a></button>
     </article>
 </section>
 <footer>

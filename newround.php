@@ -47,7 +47,7 @@
                         <button class="button is-link is-focused is-danger is-rounded">Send emails</button>
                     </div>
                     <div class="control">
-                        <button class="button is-text">Cancel</button>
+                        <button class="button is-text"><a href="ssrounds.php">Cancel</a></button>
                     </div>
                 </div>
             </div>

@@ -32,7 +32,7 @@
         <div class="field is-grouped">
             <div class="control">
                 <button class="button is-link is-focused is-danger is-rounded">Send email</button>
-                <button class="button is-text">Log into your account</button>
+                <button class="button is-text"><a href="login.php">Log into your account</a></button>
             </div>
         </div>
 
