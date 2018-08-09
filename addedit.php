@@ -9,15 +9,57 @@
 
 <body>
 <section class="container">
-    <article class="tile is-child notification is-danger">
-        <p class="title">Wide tile</p>
-        <p class="subtitle">Aligned with the right tile</p>
+    <article class="tile is-child notification is-success">
+        <p class="title">What is this person all about?</p>
+        <div class="columns">
+            <div class="column is-half">
+            <div class="field">
+                <label class="label">First Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+            </div>
+
+            <div class="column is-half">
+                <label class="label">Last Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+        </div>
+
         <div class="content">
-            <!-- Content -->
+            <div class="field">
+                <label class="label">Email Address</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="Email input">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Personal Preferences</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Private notes about this person</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-link is-focused is-danger is-rounded">Save person's details</button>
+                </div>
+                <div class="control">
+                    <button class="button is-text">Cancel</button>
+                </div>
+            </div>
         </div>
     </article>
-    </div>
-    </div>
+
 </section>
 <footer>
 

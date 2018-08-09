@@ -24,22 +24,29 @@
 <section class="container">
     <article class="tile is-child notification is-success">
         <p class="title has-text-centered has-text-dark">You are just one step away...</p>
-        <div class="content">
-            <div class="field">
-                <label class="label">First Name</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+
+        <div class="columns">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input">
+                    </div>
                 </div>
             </div>
-            <div class="field">
+
+            <div class="column is-half">
                 <label class="label">Last Name</label>
                 <div class="control">
                     <input class="input" type="text" placeholder="Text input">
                 </div>
             </div>
+        </div>
+
+        <div class="content">
 
             <div class="field">
-                <label class="label">Email</label>
+                <label class="label">Email Address</label>
                 <div class="control">
                     <input class="input" type="email" placeholder="Email input">
                 </div>
@@ -61,12 +68,6 @@
             <button class="button is-text">Log into your account</button>
         </div>
     </article>
-    </div>
-    </div>
-
-
-
-
 </section>
 <footer>
 
