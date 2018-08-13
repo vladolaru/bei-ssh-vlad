@@ -27,13 +27,13 @@
         <div class="field">
             <label class="label">New password</label>
             <div class="control">
-                <input class="input" type="password">
+                <input class="input" type="password" name="password_1">
             </div>
         </div>
         <div class="field">
             <label class="label">New password confirmation</label>
             <div class="control">
-                <input class="input" type="password">
+                <input class="input" type="password" name="password_2">
             </div>
         </div>
             <div class="control">

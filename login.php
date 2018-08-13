@@ -22,27 +22,37 @@
 </section>
 <p>&nbsp;</p>
 <section class="container">
+
     <article class="tile is-child notification has-background-success">
+
         <p class="title has-text-centered">Get that Santa going...</p>
+
+        <form action="login.php" method="post">
+
         <div class="content">
+
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
-                    <input class="input" type="email" placeholder="">
+                    <input class="input" type="email" name="email">
                 </div>
             </div>
+
             <div class="field">
                 <label class="label">Password</label>
                 <div class="control">
-                    <input class="input" type="password" placeholder="">
+                    <input class="input" type="password" name="password">
                 </div>
+
             </div>
         </div>
+
         <div class="control">
-            <button class="button is-link is-focused is-danger is-rounded">Login</button>
+            <button type="submit" name="login" class="button is-link is-focused is-danger is-rounded">Login</button>
+            <button class="button is-text is-pulled-right"><a href="register.php">Register a new account</a></button>
             <button class="button is-text is-pulled-right"><a href="forgot.php">Forgot your password?</a></button>
         </div>
-        <button class="button is-text"><a href="register.php">Register a new account</a></button>
+
     </article>
 </section>
 <footer>
