@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
 <section class="hero is-danger is-bold">
     <div class="hero-body">
         <div class="container">
@@ -27,21 +28,21 @@
 
         <p class="title has-text-centered">Get that Santa going...</p>
 
-        <form action="login.php" method="post">
+        <form action="signin.php" method="POST">
 
         <div class="content">
 
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
-                    <input class="input" type="email" name="email">
+                    <input class="input" type="email" name="email" required>
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Password</label>
                 <div class="control">
-                    <input class="input" type="password" name="password">
+                    <input class="input" type="password" name="password" required>
                 </div>
 
             </div>
@@ -52,6 +53,8 @@
             <button class="button is-text is-pulled-right"><a href="register.php">Register a new account</a></button>
             <button class="button is-text is-pulled-right"><a href="forgot.php">Forgot your password?</a></button>
         </div>
+
+        </form>
 
     </article>
 </section>

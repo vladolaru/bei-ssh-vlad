@@ -10,49 +10,64 @@
 <body>
 <section class="container">
         <article class="tile is-child notification is-success">
+
             <p class="title">Let's get this going</p>
+
             <div class="content">
+
                 <div class="field">
                     <label class="label">Choose your participants</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder=""></textarea>
+                        <textarea class="textarea" placeholder="" required></textarea>
                     </div>
                 </div>
+
                 <div class="field">
                     <label class="label">Recommended budget</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="">
+                        <input class="input" type="text" placeholder="" required>
                     </div>
                 </div>
+
                 <div class="field">
                     <label class="label">Email subject (template)</label>
                     <div class="control">
                         <input class="input" type="email" placeholder="">
                     </div>
                 </div>
+
                 <div class="field">
                     <label class="label">Email from</label>
                     <div class="control">
-                        <input class="input" type="email" placeholder="">
+                        <input class="input" type="email" placeholder="" required>
                     </div>
                 </div>
+
                 <div class="field">
                     <label class="label">Email content (template)</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder=""></textarea>
+                        <textarea class="textarea" placeholder="" required></textarea>
                     </div>
                 </div>
+
                 <div class="field">
                     <div class="control">
                         <button class="button is-link is-focused is-danger is-rounded">Send emails</button>
                     </div>
+
                     <div class="control">
                         <button class="button is-text"><a href="ssrounds.php">Cancel</a></button>
                     </div>
+
                 </div>
+
             </div>
+
         </article>
+
 </section>
+
+
 <footer>
 
 </footer>

@@ -9,14 +9,17 @@
 
 <body>
 <section class="container">
+
     <article class="tile is-child notification is-success">
+
         <p class="title">What is this person all about?</p>
+
         <div class="columns">
             <div class="column is-half">
             <div class="field">
                 <label class="label">First Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input" type="text" placeholder="" required>
                 </div>
             </div>
             </div>
@@ -24,7 +27,7 @@
             <div class="column is-half">
                 <label class="label">Last Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input" type="text" placeholder="" required>
                 </div>
             </div>
         </div>
@@ -33,7 +36,7 @@
             <div class="field">
                 <label class="label">Email Address</label>
                 <div class="control">
-                    <input class="input" type="email" placeholder="">
+                    <input class="input" type="email" placeholder="" required>
                 </div>
             </div>
             <div class="field">
@@ -53,14 +56,19 @@
                 <div class="control">
                     <button class="button is-link is-focused is-danger is-rounded">Save person's details</button>
                 </div>
+
                 <div class="control">
                     <button class="button is-text"><a href="list.php">Cancel</a></button>
                 </div>
             </div>
+
         </div>
+
     </article>
 
 </section>
+
+
 <footer>
 
 </footer>

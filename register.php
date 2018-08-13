@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
 <section class="hero is-danger is-bold">
     <div class="hero-body">
         <div class="container">
@@ -20,7 +21,9 @@
         </div>
     </div>
 </section>
+
 <p>&nbsp;</p>
+
 <section class="container">
 
     <article class="tile is-child notification is-success">
@@ -34,7 +37,7 @@
                 <div class="field">
                     <label class="label">First Name</label>
                     <div class="control">
-                        <input class="input" type="text" name="first_name">
+                        <input class="input" type="text" name="first_name" required>
                     </div>
                 </div>
             </div>
@@ -42,7 +45,7 @@
             <div class="column is-half">
                 <label class="label">Last Name</label>
                 <div class="control">
-                    <input class="input" type="text" name="last_name">
+                    <input class="input" type="text" name="last_name" required>
                 </div>
             </div>
         </div>
@@ -52,28 +55,28 @@
             <div class="field">
                 <label class="label">Email Address</label>
                 <div class="control">
-                    <input class="input" type="email" name="email">
+                    <input class="input" type="email" name="email" required>
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Password</label>
                 <div class="control">
-                    <input class="input" type="password" name="password">
+                    <input class="input" type="password" name="password" required>
                 </div>
             </div>
 
-        </div>
-        </form>
-
-        <p>&nbsp;</p>
             <div class="field is-grouped is-pulled-right">
                 <div class="control">
                     <button type="submit" name="register" class="button is-link is-focused is-danger is-rounded">Register</button>
                 </div>
             </div>
+
             <button class="button is-text"><a href="login.php">Log into your account</a></button>
+
         </div>
+
+        </form>
 
     </article>
 

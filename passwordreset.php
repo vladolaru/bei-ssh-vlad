@@ -22,27 +22,38 @@
 </section>
 <p>&nbsp;</p>
 <section class="container">
+
     <article class="tile is-child notification is-success">
+
         <p class="title">Reset your password</p>
+
         <div class="field">
             <label class="label">New password</label>
             <div class="control">
-                <input class="input" type="password" name="password_1">
+                <input class="input" type="password" name="password_1" required>
             </div>
         </div>
+
         <div class="field">
             <label class="label">New password confirmation</label>
             <div class="control">
-                <input class="input" type="password" name="password_2">
+                <input class="input" type="password" name="password_2" required>
             </div>
         </div>
+
             <div class="control">
                 <button class="button is-link is-focused is-danger is-rounded">Set password</button>
                 <button class="button is-text is-pulled-right"><<a href="login.php">Log into your account</a></button>
+
             </div>
+
         </div>
+
     </article>
+
 </section>
+
+
 <footer>
 
 </footer>
