@@ -1,3 +1,7 @@
+<?php
+include 'signup.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,16 +32,24 @@
 
     <article class="tile is-child notification is-success">
 
+        <?php
+        if(!empty($errors)){
+            foreach ($errors as $error) {
+                echo "<p class=\"has-text-danger\">$error</p>";
+            }
+        }
+        ?>
+
         <p class="title has-text-centered has-text-dark">You are just one step away...</p>
 
-        <form action="signup.php" method="POST">
+        <form action="" method="POST">
 
         <div class="columns">
             <div class="column is-half">
                 <div class="field">
                     <label class="label">First Name</label>
                     <div class="control">
-                        <input class="input" type="text" name="first_name" required>
+                        <input class="input" type="text" name="first_name">
                     </div>
                 </div>
             </div>
@@ -45,7 +57,7 @@
             <div class="column is-half">
                 <label class="label">Last Name</label>
                 <div class="control">
-                    <input class="input" type="text" name="last_name" required>
+                    <input class="input" type="text" name="last_name">
                 </div>
             </div>
         </div>
@@ -55,14 +67,14 @@
             <div class="field">
                 <label class="label">Email Address</label>
                 <div class="control">
-                    <input class="input" type="email" name="email" required>
+                    <input class="input" type="email" name="email">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Password</label>
                 <div class="control">
-                    <input class="input" type="password" name="password" required>
+                    <input class="input" type="password" name="password">
                 </div>
             </div>
 

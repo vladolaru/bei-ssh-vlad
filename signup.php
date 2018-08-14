@@ -2,44 +2,44 @@
 
 include 'connection.php';
 
-$first = $_POST['first_name'];
-$last = $_POST['last_name'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$password = md5($password);
+if (isset($_POST['register'])) {
 
+	$first    = $_POST['first_name'];
+	$last     = $_POST['last_name'];
+	$email    = $_POST['email'];
+	$password = $_POST['password'];
+	$password = password_hash( $password, PASSWORD_DEFAULT );
+	$errors   = array();
 
-
-
-//$_SESSION['first_name'] = $first;
-//$_SESSION['success'] = "You are now logged in";
-
-
-if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-{
-	header("Location: register.php?register=email");
-	exit();
-} else{
-	$data = $database->select('users', ['email']);
-	$dataCheck = mysqli_num_rows($data);
-
-	if($dataCheck > 0){
-		header("Location: register.php?register=usertaken");
-		exit();
+	if ( empty( $first ) ) {
+		array_push( $errors, "First name is required" );
 	}
-	else{
-		$database->insert( 'users',
-			[
-				'first_name' => $first,
-				'last_name'  => $last,
-				'email'      => $email,
-				'password'   => $password
-			] );
-		header("Location: list.php");
+	if ( empty( $last ) ) {
+		array_push( $errors, "Last name is required" );
+	}
+	if ( empty( $email ) ) {
+		array_push( $errors, "Email is required" );
+	}
+	if ( empty( $password ) ) {
+		array_push( $errors, "Password is required" );
+	}
+
+	$datas = $database->select( 'users', [ 'email' ] );
+	foreach ( $datas as $data ) {
+		if ( $email == $data ['email'] ) {
+			array_push( $errors, 'This e-mail address already exists in our database!' );
+		}
+	}
+
+	if ( count( $errors ) == 0 ) {
+
+		$database->insert( 'users', [
+			'first_name' => $first,
+			'last_name'  => $last,
+			'email'      => $email,
+			'password'   => $password
+		] );
+
+		header( "Location: list.php" );
 	}
 }
-//else{
-//	header("Location: register.php);
-//	exit();
-//}
-

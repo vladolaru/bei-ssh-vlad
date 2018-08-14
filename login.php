@@ -1,3 +1,7 @@
+<?php
+include 'signin.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,23 +30,31 @@
 
     <article class="tile is-child notification has-background-success">
 
+	    <?php
+	    if(!empty($errors)){
+		    foreach ($errors as $error) {
+			    echo "<p class=\"has-text-danger\">$error</p>";
+		    }
+	    }
+	    ?>
+
         <p class="title has-text-centered">Get that Santa going...</p>
 
-        <form action="signin.php" method="POST">
+        <form action="" method="POST">
 
         <div class="content">
 
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
-                    <input class="input" type="email" name="email" required>
+                    <input class="input" type="email" name="email">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Password</label>
                 <div class="control">
-                    <input class="input" type="password" name="password" required>
+                    <input class="input" type="password" name="password">
                 </div>
 
             </div>
