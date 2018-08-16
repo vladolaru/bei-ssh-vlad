@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 include 'connection.php';
 
 if (isset($_POST['register'])) {
@@ -39,6 +40,9 @@ if (isset($_POST['register'])) {
 			'email'      => $email,
 			'password'   => $password
 		] );
+
+		$_SESSION['email']   = $email;
+		$_SESSION['success'] = "You are now logged in";
 
 		header( "Location: list.php" );
 	}

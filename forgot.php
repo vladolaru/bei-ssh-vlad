@@ -1,3 +1,5 @@
+<?php  include 'sendpwd.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,19 +24,39 @@
 </section>
 <p>&nbsp;</p>
 <section class="container">
+
     <article class="tile is-child notification is-success">
+
+	    <?php
+	    if(!empty($errors)){
+		    foreach ($errors as $error) {
+			    echo "<p class=\"has-text-danger\">$error</p>";
+		    }
+	    }
+	    ?>
+
         <p class="title">Password Reset Email</p>
-        <p class="subtitle">We will send you an email to the address below with the information needed for you yo change the password.</p>
+
+        <form action="" method="POST">
+
+        <p class="subtitle">We will send you an email to the address below with the information needed for you to change the password.</p>
         <div class="content">
+
             <p class="subtitle has-text-danger">Your email address</p>
+
             <input class="input" type="email" placeholder="">
         </div>
+
         <div class="field is-grouped">
+
             <div class="control">
-                <button class="button is-link is-focused is-danger is-rounded">Send email</button>
+                <button type="submit" name="sendpwd" class="button is-link is-focused is-danger is-rounded">Send email</button>
                 <button class="button is-text"><a href="login.php">Log into your account</a></button>
             </div>
+
         </div>
+
+        </form>
 
     </article>
 
