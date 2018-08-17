@@ -29,27 +29,29 @@
 
         <p class="title">Reset your password</p>
 
+        <form action="" method="POST">
+
         <div class="field">
             <label class="label">New password</label>
             <div class="control">
-                <input class="input" type="password" name="password_1" required>
+                <input class="input" type="password" name="password_1">
             </div>
         </div>
 
         <div class="field">
             <label class="label">New password confirmation</label>
             <div class="control">
-                <input class="input" type="password" name="password_2" required>
+                <input class="input" type="password" name="password_2">
             </div>
         </div>
 
             <div class="control">
-                <button class="button is-link is-focused is-danger is-rounded">Set password</button>
-                <button class="button is-text is-pulled-right"><<a href="login.php">Log into your account</a></button>
+                <button name='setpwd' class="button is-link is-focused is-danger is-rounded">Set password</button>
+                <button class="button is-text is-pulled-right"><a href="login.php">Log into your account</a></button>
 
             </div>
 
-        </div>
+        </form>
 
     </article>
 

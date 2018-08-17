@@ -1,7 +1,8 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Vlad
- * Date: 8/15/2018
- * Time: 12:20 PM
- */
+<?php include 'connection.php';
+
+
+	$email = $_GET['email'];
+
+	$database->delete( 'persons', [ 'email[=]' => $email ] );
+
+	header( 'location: list.php' );

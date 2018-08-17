@@ -44,7 +44,7 @@
 
             <p class="subtitle has-text-danger">Your email address</p>
 
-            <input class="input" type="email" placeholder="">
+            <input class="input" type="email" name="email">
         </div>
 
         <div class="field is-grouped">

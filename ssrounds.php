@@ -91,8 +91,8 @@ if (isset($_GET['logout'])) {
                     <thead>
                     <tr>
                         <th>Round ID</th>
-                        <th>Date</th>
                         <th>Participants</th>
+                        <th>Date</th>
                         <th>Budget</th>
                         <th></th>
                     </tr>
@@ -101,12 +101,13 @@ if (isset($_GET['logout'])) {
 
 		            <?php
 
-		            $data = $database->select( 'rounds', [ 'date', 'participants', 'budget' ] );
+		            $data = $database->select( 'rounds', '*' );
 
 		            foreach ($data as $key => $line) { ?>
                         <tr>
-                            <td><?php echo $line['date']; ?></td>
-                            <td><?php echo $line['participants']; ?></td>
+                            <td><?php echo $line['id']; ?></td>
+                            <td><?php print_r(count(unserialize($line['participants']))); ?></td>
+                            <td><?php echo $line['created']; ?></td>
                             <td><?php echo $line['budget']; ?></td>
                         </tr>
 		            <?php }
@@ -118,7 +119,7 @@ if (isset($_GET['logout'])) {
                 <div class="field">
 
                     <div class="control">
-                        <button class="button is-link is-danger is-rounded"><a href="newround.php">Start a new round</a></button>
+                        <button class="button is-link is-danger is-rounded"><a href="newround.php">Add a new round</a></button>
                     </div>
 
             </div>

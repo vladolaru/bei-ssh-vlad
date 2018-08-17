@@ -106,7 +106,7 @@ if (isset($_GET['logout'])) {
 
                     <td>
                         <button class="button is-link is-focused is-danger is-rounded"><a href="edit.php">Edit</a></button>
-                        <button class="button is-link is-focused is-danger is-rounded"><a href="edit.php">Delete</a></button>
+                        <button name="delete" class="button is-link is-focused is-danger is-rounded"><a href="http://pixy.local/bei-ssh-vlad/delete.php?email=<?php echo $line['email']; ?>">Delete</a></button>
                     </td>
 
                 </tr>
@@ -118,9 +118,12 @@ if (isset($_GET['logout'])) {
 
                 <div class="field is-grouped is-pulled-left">
 
+
                     <div class="control">
                         <button class="button is-link is-focused is-danger is-rounded"><a href="add.php">Add a new participant</a></button>
                     </div>
+
+            </div>
 
             </div>
 
@@ -138,3 +141,4 @@ if (isset($_GET['logout'])) {
 </footer>
 </body>
 </html>
+

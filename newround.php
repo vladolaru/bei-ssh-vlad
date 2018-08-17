@@ -1,5 +1,5 @@
 <?php
-include 'sendround.php';
+include 'sendemails.php';
 
 session_start();
 
@@ -99,14 +99,14 @@ if (isset($_GET['logout'])) {
 
                     <?php
 
-	                $data = $database->select( 'persons', [ 'email' ] );
+	                $data = $database->select( 'persons', '*' );
 
 	                 ?>
 
                         <div class="select is-multiple">
-                            <select multiple size="5">
+                            <select multiple size="5" name="participants[]">
                                 <?php foreach ($data as $key => $line) { ?>
-                                <option value='' name="participants" ><?php echo $line['email']; ?></option>
+                                <option value="<?php echo $line['id']; ?>"><?php echo $line['email']; ?></option>
 	                            <?php }
 	                            ?>
                             </select>
@@ -115,6 +115,7 @@ if (isset($_GET['logout'])) {
 
 
                 </div>
+
 
 
                 <div class="field">
@@ -147,7 +148,7 @@ if (isset($_GET['logout'])) {
 
                 <div class="field">
                     <div class="control">
-                        <button type="submit" name="sendround" class="button is-link is-focused is-danger is-rounded">Send emails</button>
+                        <button type="submit" name="sendemails" class="button is-link is-focused is-danger is-rounded">Send Emails</button>
                     </div>
 
                     <div class="control">
